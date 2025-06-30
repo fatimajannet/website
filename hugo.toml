@@ -255,11 +255,15 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
   url = "https://www.linkedin.com/company/kubernetes/"
   icon = "fa-brands fa-linkedin"
 
-#[[params.links.user]]
-#	name_key = "community_x_name"
-#	url = "https://twitter.com/kubernetesio"
-#	icon = "fa-brands fa-twitter"
-# Replace with fa-x-twitter once available
+[[params.links.user]]
+	name_key = "community_bluesky_name"
+	url = "https://bsky.app/profile/kubernetes.io"
+	icon = "fa-brands fa-bluesky"
+
+[[params.links.user]]
+	name_key = "community_x_name"
+	url = "https://x.com/kubernetesio"
+	icon = "fa-brands fa-x-twitter"
 
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
@@ -498,6 +502,7 @@ languagedirection = "ltr"
 [languages.vi.params]
 languageNameLatinScript = "Tiếng Việt"
 description = "Giải pháp điều phối container trong môi trường production"
+language_alternatives = ["en"]
 
 # Ensure that the correct file names are in the correct directory. For e.g. i18n/en should contain en.toml and never de.toml
 [[module.mounts]]
